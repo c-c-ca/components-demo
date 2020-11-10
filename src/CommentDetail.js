@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CommentDetail = props => {
-    const { avatar, author, date, text } = props;
+    const { avatar, author, timeAgo, content } = props;
     return (
         <div className="comment">
             <a href="/" className="avatar">
@@ -12,9 +12,9 @@ const CommentDetail = props => {
                     {author}
                 </a>
                 <div className="metadata">
-                    <span className="date">{date}</span>
+                    <span className="date">{timeAgo}</span>
                 </div>
-                <div className="text">{text}</div>
+                <div className="text">{content}</div>
             </div>
         </div>
     );
